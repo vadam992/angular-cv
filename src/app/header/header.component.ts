@@ -1,7 +1,8 @@
-import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
+import { Component, OnInit, HostListener, HostBinding, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-header',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
