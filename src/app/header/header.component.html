@@ -1,0 +1,19 @@
+<header class="navbar"  [ngClass]="{'navbar-fixed': isFixedNavbar}">
+        <div class="container">
+           <div class="navbar-mobile-top">
+              <div class="navbar-logo">
+                 <img src="/assets/img/angular-logo.png" alt="">
+              </div>
+              <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+                 <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+              </button>
+           </div>
+           <div class="top-navbar">
+              <a mat-button href="/#introduction"class="navbartop-btn" ><strong>Bemutatkozás</strong></a>
+              <a mat-button href="/#education" class="navbartop-btn" ><strong>Tanulmányok</strong></a>
+              <a mat-button href="/#experience" class="navbartop-btn" ><strong>Tapasztalat</strong></a>
+              <a mat-button href="/#knowledges" class="navbartop-btn" ><strong>Informatikai ismeretek</strong></a>
+              <a mat-button href="/#contact" class="navbartop-btn" ><strong>Kapcsolat</strong></a>
+           </div>
+        </div>
+</header>
