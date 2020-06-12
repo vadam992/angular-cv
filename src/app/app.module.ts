@@ -6,16 +6,20 @@ import { HeaderComponent } from './header/header.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { IntroductionComponent } from './introduction/introduction.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,27 @@
+#introduction{
+    padding: 150px 50px;
+    .row{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+        .column{
+            width: 50%;
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+        }
+        .content-introduction{
+            text-align: justify;
+        }
+        .image-introduction{
+            text-align: center;
+            img{
+                max-width: 200px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
