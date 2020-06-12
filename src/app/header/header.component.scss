@@ -83,13 +83,13 @@
         padding: 0;
         flex-flow: row wrap;
     }
-    .navbar-opened:host .navbar-mobile-top {
+    .navbar-opened .navbar-mobile-top {
       padding: 5px 0;
     }
    .navbar-toggle {
         display: block !important;
     }
-    .navbar-opened:host .container {
+    .navbar-opened .container {
         height: auto !important;
         padding: 0px !important;
     }
@@ -99,7 +99,7 @@
     .top-navbar {
         display: none !important;
     }
-    .navbar-opened:host {
+    .navbar-opened {
         .top-navbar {
             display: block !important;
             width: 100% !important;
@@ -109,7 +109,7 @@
             background: $header-background;
         }
     }
-    .navbar-opened:host .top-navbar a {
+    .navbar-opened .top-navbar a {
         display: block;
         width: 100%;
         line-height: 56px !important;
