@@ -4,9 +4,15 @@
               <div class="navbar-logo">
                  <img src="/assets/img/angular-logo.png" alt="">
               </div>
-              <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+              <!--button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
                  <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
-              </button>
+              </button-->
+              <div id="nav-icon" color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
            </div>
            <div class="top-navbar">
               <a mat-button href="/#introduction"class="navbartop-btn" ><strong>Bemutatkozás</strong></a>
