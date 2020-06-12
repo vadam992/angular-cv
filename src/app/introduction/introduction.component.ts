@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-introduction',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './introduction.component.html',
   styleUrls: ['./introduction.component.scss']
 })
