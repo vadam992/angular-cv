@@ -1,0 +1,129 @@
+@import "../../variables.scss";
+#timeline{
+    background-color: $education-section-color;
+    padding: 100px 0;
+    .section-titles{
+        text-align: center;
+        padding: 40px 0;
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 13px;
+            background-color: $background-white-color;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 5px;
+            @media screen and (max-width: 992px) {
+                left: 31px;
+              }
+          }
+          .timeline-point{
+            img{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 47.6%;
+                z-index: 99;
+                border-radius: 100%;
+                @media screen and (max-width: 992px) {
+                    left: 10px;
+                }
+            }
+        }
+          .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 41%;
+            margin: 0;
+            z-index: 2;
+            @media screen and (max-width: 992px) {
+                width: 60%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+              .content {
+                padding: 20px 30px;
+                background-color: $background-white-color;
+                position: relative;
+                border-radius: 6px;
+                .specialization{
+                    font-style: italic;
+                }
+                @media screen and (max-width: 992px) {
+                  text-align: left!important;
+                  padding: 20px 25px;
+                }
+              }
+              &.timeline-left {
+                left: 3%;
+                @media screen and (max-width: 1200px) {
+                  left: 2%;
+                }
+                @media screen and (max-width: 992px) {
+                    left: 0%;
+                  }
+                .content{
+                    text-align: right;
+                }
+                &:before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 22px;
+                    width: 0;
+                    z-index: 1;
+                    right: 30px;
+                    border: medium solid $background-white-color;
+                    border-width: 10px 0 10px 10px;
+                    border-color: transparent transparent transparent $background-white-color;
+                    @media screen and (max-width: 992px) {
+                        left: 60px;
+                        border: medium solid $background-white-color;
+                        border-width: 10px 10px 10px 0;
+                        border-color: transparent $background-white-color transparent transparent;
+                      }
+                  }
+                &:after{
+                    @media screen and (max-width: 992px) {
+                        left: 18px;
+                    }
+                }
+              }
+              &.timeline-right {
+                left: 50%;
+                &:before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 22px;
+                    width: 0;
+                    z-index: 1;
+                    left: 30px;
+                    border: medium solid $background-white-color;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent $background-white-color transparent transparent;
+                    @media screen and (max-width: 992px) {
+                        left: 60px;
+                    }
+                  }
+                  &:after {
+                    left: -13px;
+                    @media screen and (max-width: 992px) {
+                        left: 18px;
+                    }
+                  }
+                  @media screen and (max-width: 992px) {
+                    left: 0%;
+                }
+              }
+          }
+      }
+}

@@ -31,3 +31,7 @@ Responsive menu:
 npm install @angular/material
 npm install @angular/cdk
 npm install @angular/flex-layout
+
+Animation:
+npm i rxjs
+npm i @angular/animations

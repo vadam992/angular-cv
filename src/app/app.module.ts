@@ -9,7 +9,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { TimelineComponent } from './timeline/timeline.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,14 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     IntroductionComponent,
     EducationComponent,
-    FooterComponent
+    FooterComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
     MatIconModule,
     FlexLayoutModule,
-    
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
